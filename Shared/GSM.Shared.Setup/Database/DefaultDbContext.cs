@@ -18,6 +18,27 @@ public class DefaultDbContext : DbContext
         return base.SaveChangesAsync(cancellationToken);
     }
 
+    public override int SaveChanges(bool acceptAllChangesOnSuccess)
+    {
+        OnBeforeSaveChanges();
+        
+        return base.SaveChanges(acceptAllChangesOnSuccess);
+    }
+
+    public override int SaveChanges()
+    {
+        OnBeforeSaveChanges();
+        
+        return base.SaveChanges();
+    }
+
+    public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = new CancellationToken())
+    {
+        OnBeforeSaveChanges();
+        
+        return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
+    }
+
     public void OnBeforeSaveChanges()
     {
         ChangeTracker.DetectChanges();
@@ -55,7 +76,7 @@ public class DefaultDbContext : DbContext
                             auditEntry.OldValues[propertyName] = property.OriginalValue;
                             auditEntry.NewValues[propertyName] = property.CurrentValue;
 
-                            if (property.OriginalValue.ToString() != property.CurrentValue.ToString())
+                            if (property.OriginalValue != property.CurrentValue)
                             {
                                 auditEntry.ChangedColumns.Add(propertyName);
                             }

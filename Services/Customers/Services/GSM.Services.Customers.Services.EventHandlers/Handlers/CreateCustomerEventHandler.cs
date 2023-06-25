@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using GSM.Services.Customers.Domain.Models;
-using GSM.Services.Customers.EventHandlers.Commands;
+using GSM.Services.Customers.Services.EventHandlers.Commands;
 using GSM.Services.Customers.Persistence.Database;
 using GSM.Shared.Setup.CQRS.Commands;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace GSM.Services.Customers.EventHandlers.Handlers;
+namespace GSM.Services.Customers.Services.EventHandlers.Handlers;
 
 public class CreateCustomerEventHandler : IRequestHandler<CreateCustomerEventCommand, CommandGenericResult<Customer>>
 {

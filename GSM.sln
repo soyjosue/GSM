@@ -26,7 +26,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Shared.EnvironmentVaria
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6CF2B126-049C-41AE-9235-59D36FFCBE4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Customers.EventHandlers", "Services\Customers\Services\GSM.Services.Customers.EventHandlers\GSM.Services.Customers.EventHandlers.csproj", "{4F318F6F-29D2-43C8-A1BF-B09844880940}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Customers.Services.EventHandlers", "Services\Customers\Services\GSM.Services.Customers.Services.EventHandlers\GSM.Services.Customers.Services.EventHandlers.csproj", "{4F318F6F-29D2-43C8-A1BF-B09844880940}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Customers.Shared.Dtos", "Services\Customers\Shared\GSM.Services.Customers.Shared.Dtos\GSM.Services.Customers.Shared.Dtos.csproj", "{C3238642-A323-4D83-A58E-BB9D9305CDED}"
 EndProject
@@ -35,6 +35,32 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Shared.Dtos", "Shared\GSM.Shared.Dtos\GSM.Shared.Dtos.csproj", "{A1F55292-3302-4100-A8A8-2D2A53FFA083}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Customers.Services.Queries", "Services\Customers\Services\GSM.Services.Customers.Services.Queries\GSM.Services.Customers.Services.Queries.csproj", "{6D5CAB26-776C-45EC-B656-DEB0DFB77D1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{6D696AC7-1F5D-4404-BECF-399E466EBD25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{4541772F-21A8-4C18-A8EF-C62535CDDCD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{293862DA-3266-4BF4-9D06-A313D7D26409}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{D82147E0-487D-4DBE-BBCA-AFDCECFCA9A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6E38F46D-3A55-42BB-97D4-5B8896D88FE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{8F73918F-BB17-4FB6-9402-5F1303426746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Security.API", "Services\Security\API\GSM.Services.Security.API\GSM.Services.Security.API.csproj", "{FCA4229B-079C-4EE5-BAE8-BE51CA624B47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Security.Domain.Models", "Services\Security\Domain\GSM.Services.Security.Domain.Models\GSM.Services.Security.Domain.Models.csproj", "{B7014595-0E13-4623-8D13-C4BCB122588C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Security.Persistence.Database", "Services\Security\Persistence\GSM.Services.Security.Persistence.Database\GSM.Services.Security.Persistence.Database.csproj", "{8E9BE72C-7063-42AF-85E9-03B7717FDE3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Security.Services.EventHandlers", "Services\Security\Services\GSM.Services.Security.Services.EventHandlers\GSM.Services.Security.Services.EventHandlers.csproj", "{076CAEF0-A89D-47CD-9843-B13E5558B37B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Security.Services.Queries", "Services\Security\Services\GSM.Services.Security.Services.Queries\GSM.Services.Security.Services.Queries.csproj", "{53712B90-D3A7-4E51-B18F-4815FECBBCA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Services.Security.Shared.Dtos", "Services\Security\Shared\GSM.Services.Security.Shared.Dtos\GSM.Services.Security.Shared.Dtos.csproj", "{784FC62E-7D84-4518-8A5F-3B6921D0BF4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM.Shared.Helpers", "Shared\GSM.Shared.Helpers\GSM.Shared.Helpers.csproj", "{A181BF6B-3198-4D54-AA91-C92CA4E7D2CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +84,19 @@ Global
 		{C3238642-A323-4D83-A58E-BB9D9305CDED} = {17F6E6A0-FECF-49A7-992B-4CD425D1F236}
 		{A1F55292-3302-4100-A8A8-2D2A53FFA083} = {7AFEC57F-3971-4412-8285-9CD533033B36}
 		{6D5CAB26-776C-45EC-B656-DEB0DFB77D1B} = {6CF2B126-049C-41AE-9235-59D36FFCBE4E}
+		{6D696AC7-1F5D-4404-BECF-399E466EBD25} = {9B9C0FF0-B760-495A-BBDF-559A91371E49}
+		{4541772F-21A8-4C18-A8EF-C62535CDDCD0} = {6D696AC7-1F5D-4404-BECF-399E466EBD25}
+		{293862DA-3266-4BF4-9D06-A313D7D26409} = {6D696AC7-1F5D-4404-BECF-399E466EBD25}
+		{D82147E0-487D-4DBE-BBCA-AFDCECFCA9A7} = {6D696AC7-1F5D-4404-BECF-399E466EBD25}
+		{6E38F46D-3A55-42BB-97D4-5B8896D88FE9} = {6D696AC7-1F5D-4404-BECF-399E466EBD25}
+		{8F73918F-BB17-4FB6-9402-5F1303426746} = {6D696AC7-1F5D-4404-BECF-399E466EBD25}
+		{FCA4229B-079C-4EE5-BAE8-BE51CA624B47} = {4541772F-21A8-4C18-A8EF-C62535CDDCD0}
+		{B7014595-0E13-4623-8D13-C4BCB122588C} = {293862DA-3266-4BF4-9D06-A313D7D26409}
+		{8E9BE72C-7063-42AF-85E9-03B7717FDE3C} = {D82147E0-487D-4DBE-BBCA-AFDCECFCA9A7}
+		{076CAEF0-A89D-47CD-9843-B13E5558B37B} = {6E38F46D-3A55-42BB-97D4-5B8896D88FE9}
+		{53712B90-D3A7-4E51-B18F-4815FECBBCA9} = {6E38F46D-3A55-42BB-97D4-5B8896D88FE9}
+		{784FC62E-7D84-4518-8A5F-3B6921D0BF4D} = {8F73918F-BB17-4FB6-9402-5F1303426746}
+		{A181BF6B-3198-4D54-AA91-C92CA4E7D2CD} = {7AFEC57F-3971-4412-8285-9CD533033B36}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{94A94C99-A650-43FB-AF2C-28BE843A15A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -100,5 +139,33 @@ Global
 		{6D5CAB26-776C-45EC-B656-DEB0DFB77D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5CAB26-776C-45EC-B656-DEB0DFB77D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5CAB26-776C-45EC-B656-DEB0DFB77D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA4229B-079C-4EE5-BAE8-BE51CA624B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA4229B-079C-4EE5-BAE8-BE51CA624B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA4229B-079C-4EE5-BAE8-BE51CA624B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA4229B-079C-4EE5-BAE8-BE51CA624B47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7014595-0E13-4623-8D13-C4BCB122588C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7014595-0E13-4623-8D13-C4BCB122588C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7014595-0E13-4623-8D13-C4BCB122588C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7014595-0E13-4623-8D13-C4BCB122588C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E9BE72C-7063-42AF-85E9-03B7717FDE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E9BE72C-7063-42AF-85E9-03B7717FDE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E9BE72C-7063-42AF-85E9-03B7717FDE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E9BE72C-7063-42AF-85E9-03B7717FDE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076CAEF0-A89D-47CD-9843-B13E5558B37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076CAEF0-A89D-47CD-9843-B13E5558B37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076CAEF0-A89D-47CD-9843-B13E5558B37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076CAEF0-A89D-47CD-9843-B13E5558B37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53712B90-D3A7-4E51-B18F-4815FECBBCA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53712B90-D3A7-4E51-B18F-4815FECBBCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53712B90-D3A7-4E51-B18F-4815FECBBCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53712B90-D3A7-4E51-B18F-4815FECBBCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784FC62E-7D84-4518-8A5F-3B6921D0BF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784FC62E-7D84-4518-8A5F-3B6921D0BF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784FC62E-7D84-4518-8A5F-3B6921D0BF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784FC62E-7D84-4518-8A5F-3B6921D0BF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A181BF6B-3198-4D54-AA91-C92CA4E7D2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A181BF6B-3198-4D54-AA91-C92CA4E7D2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A181BF6B-3198-4D54-AA91-C92CA4E7D2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A181BF6B-3198-4D54-AA91-C92CA4E7D2CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

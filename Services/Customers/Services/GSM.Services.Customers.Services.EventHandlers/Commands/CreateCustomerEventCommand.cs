@@ -3,7 +3,7 @@ using GSM.Services.Customers.Domain.Models;
 using GSM.Shared.Setup.CQRS.Commands;
 using MediatR;
 
-namespace GSM.Services.Customers.EventHandlers.Commands;
+namespace GSM.Services.Customers.Services.EventHandlers.Commands;
 
 public class CreateCustomerEventCommand : IRequest<CommandGenericResult<Customer>>
 {

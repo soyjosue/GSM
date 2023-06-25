@@ -19,7 +19,7 @@ public class AppSettingUtils
         }
     }
 
-    public T? Get<T>(string key)
+    public T Get<T>(string key)
     {
         T? value = Current._configuration.GetValue<T>(key);
 

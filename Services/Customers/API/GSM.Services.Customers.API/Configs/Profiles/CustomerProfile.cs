@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using GSM.Services.Customers.Domain.Models;
-using GSM.Services.Customers.EventHandlers.Commands;
+using GSM.Services.Customers.Services.EventHandlers.Commands;
 using GSM.Services.Customers.Shared.Dtos;
 
 namespace GSM.Services.Customers.API.Configs.Profiles;

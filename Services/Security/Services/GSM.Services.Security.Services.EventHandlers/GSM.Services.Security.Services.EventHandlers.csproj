@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.0.1" />
+      <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Domain\GSM.Services.Security.Domain.Models\GSM.Services.Security.Domain.Models.csproj" />
+      <ProjectReference Include="..\..\Persistence\GSM.Services.Security.Persistence.Database\GSM.Services.Security.Persistence.Database.csproj" />
+    </ItemGroup>
+
+</Project>
