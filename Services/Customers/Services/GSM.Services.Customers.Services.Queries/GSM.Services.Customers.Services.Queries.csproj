@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\..\Shared\GSM.Shared.Setup\GSM.Shared.Setup.csproj" />
+      <ProjectReference Include="..\..\Domain\GSM.Services.Customers.Domain.Models\GSM.Services.Customers.Domain.Models.csproj" />
+      <ProjectReference Include="..\..\Persistence\GSM.Services.Customers.Persistence.Database\GSM.Services.Customers.Persistence.Database.csproj" />
+    </ItemGroup>
+
+</Project>
