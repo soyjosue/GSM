@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EfCoreDialogsState">
+    <option name="keyValueStorage">
+      <map>
+        <entry key="Common:8e9be72c-7063-42af-85e9-03b7717fde3c:dbContext" value="GSM.Services.Security.Persistence.Database.SecurityDbContext" />
+        <entry key="Common:b4790f1a-c367-4187-91ea-40a9b9553f0f:dbContext" value="GSM.Services.Products.Persistence.Database.ProductDbContext" />
+        <entry key="Common:buildConfiguration" value="Debug" />
+        <entry key="Common:ed6c3b49-6d1a-45b5-b65b-f41f58344ad3:dbContext" value="GSM.Services.Customers.Persistence.Database.CustomerDbContext" />
+        <entry key="Common:noBuild" value="false" />
+        <entry key="Common:outputFolder" value="Migrations" />
+        <entry key="Common:useDefaultConnection" value="true" />
+      </map>
+    </option>
+  </component>
+</project>

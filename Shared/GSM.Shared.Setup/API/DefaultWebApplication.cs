@@ -1,12 +1,7 @@
-﻿using System.Reflection;
-using System.Text;
-using GSM.Shared.EnvironmentVariable;
-using GSM.Shared.Setup.Database;
+﻿using GSM.Shared.Setup.Database;
 using GSM.Shared.Setup.Database.Service;
 using GSM.Shared.Setup.Jwt.Extensions;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
 
 namespace GSM.Shared.Setup.API;
 
